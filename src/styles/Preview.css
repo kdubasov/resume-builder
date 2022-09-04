@@ -1,0 +1,16 @@
+.Preview{
+    width: 100%;
+    height: 100vh;
+    padding: var(--st-padding);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.Preview h1{
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.Preview h4{
+    font-weight: 300;
+}

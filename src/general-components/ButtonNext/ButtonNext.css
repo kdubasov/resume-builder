@@ -1,0 +1,46 @@
+/*button next styles*/
+.ButtonNext {
+    /* Variables */
+    text-decoration: none;
+    --button_radius: 0.75em;
+    --button_color: var(--yellow);
+    --button_outline_color: #000000;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+}
+
+.ButtonNext span {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+}
+
+.ButtonNext:hover span {
+    /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+}
+
+.ButtonNext:active span {
+    /* Push the button downwards when pressed */
+    transform: translateY(0);
+}
+
+.ButtonNext.posAbs{
+    position: absolute;
+    bottom: var(--st-padding);
+    right: var(--st-padding);
+}
+.ButtonNext.posAbsGit{
+    position: absolute;
+    bottom: var(--st-padding);
+    right: calc(var(--st-padding) + var(--st-padding) + 20px);
+}

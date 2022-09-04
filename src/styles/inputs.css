@@ -1,0 +1,45 @@
+/*input with top placeholder*/
+.input-top-label{
+    width: inherit;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.input-top-label input,
+.input-top-label textarea{
+    width: 100%;
+    height: auto;
+    background-color: rgba(5, 6, 15, 0.15);
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    border: 2px solid transparent;
+    font-size: 1.2rem;
+    resize: none;
+    transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
+}
+
+.input-top-label label {
+    display: flex;
+    align-items: center;
+    margin-bottom: .3rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--black);
+    transition: color .3s cubic-bezier(.25,.01,.25,1) 0s;
+}
+
+.input-top-label input:hover,
+.input-top-label input:focus,
+.input-top-label:hover .input-top-label input,
+.input-top-label textarea:hover,
+.input-top-label textarea:focus,
+.input-top-label:hover .input-top-label textarea{
+    outline: none;
+    border-color: #05060f;
+}
+
+.input-top-label:hover label,
+.input-top-label input:focus,
+.input-top-label textarea:focus{
+    color: #05060fc2;
+}

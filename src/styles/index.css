@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+:root{
+    --black: rgb(0, 0, 0);
+    --white:#FFF;
+    --gray:#555;
+    --yellow:#FBCA1F;
+    --st-padding:10%;
+}
+
+/*for one screen page or blocks*/
+.vh-vw{
+    width: 100%;
+    height: 100vh;
+    padding: var(--st-padding);
+}
+
+/*centered div*/
+.center-ac{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+/*overlay-button styles*/
+.overlay-button{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    border-radius: 10px;
+    border: none;
+    background: var(--yellow);
+}
